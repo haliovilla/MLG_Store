@@ -1,0 +1,111 @@
+
+<div [hidden]="showForm">
+  <div class="d-flex justify-content-between align-items-center mt-3 mb-3 pt-3 pb-3"
+       style="border-bottom:2px solid ~ccc">
+    <h2>
+      Artículos
+    </h2>
+    <button class="btn btn-outline-secondaryt text-end"
+            (click)="addNew()">
+      Agregar
+    </button>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td></td>
+          <td>Código</td>
+          <td>Descripción</td>
+          <td>Precio</td>
+          <td>Existencia</td>
+          <td>Sucursal</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let article of articles">
+          <td>
+            <img [src]="article.image" [title]="article.description"
+                 class="article-image" />
+          </td>
+          <td>{{ article.code }}</td>
+          <td>{{ article.description }}</td>
+          <td>{{ article.price | currency }}</td>
+          <td>{{ article.stock | number }}</td>
+          <td>{{ article.store.branch }}</td>
+          <td class="text-end">
+            <div class="btn-group text-end">
+              <button class="btn btn-secondary btn-sm"
+                      (click)="edit(article)">
+                Editar
+              </button>
+              <button class="btn btn-secondary btn-sm"
+                      (click)="delete(article)">
+                Eliminar
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<ng-container *ngIf="showForm">
+  <div class="form-group">
+    <h3 class="mt-5 mb-5">
+      {{ !isEdition ? 'Agregar nuevo artículo' : 'Editar artículo' }}
+    </h3>
+    <form [formGroup]="articleForm">
+      <div class="mb-3">
+        <label for="store" class="form-label">Tienda:</label>
+        <select class="form-control" id="store" formControlName="storeId">
+          <option *ngFor="let store of stores"
+                  [value]="store.id">{{ store.branch }}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="code" class="form-label">Código:</label>
+        <input type="text" class="form-control" id="code" formControlName="code" required autofocus />
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Descripción:</label>
+        <input type="text" class="form-control" id="description" formControlName="description" required>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Precio:</label>
+        <input type="number" class="form-control" id="price" formControlName="price" required>
+      </div>
+      <div class="mb-3">
+        <label for="stock" class="form-label">Existencia:</label>
+        <input type="number" class="form-control" id="stock" formControlName="stock" required>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Url de imagen:</label>
+        <input type="text" class="form-control" id="image" formControlName="image" required>
+      </div>
+
+      <div class="d-flex justify-content-around align-items-center" mt-3 mb-2>
+        <button type="submit" *ngIf="!isEdition"
+                class="btn btn-primary"
+                [disabled]="!isValidForm()"
+                (click)="save()">
+          Guardar
+        </button>
+        <button type="submit" *ngIf="isEdition"
+                class="btn btn-primary"
+                [disabled]="!isValidForm()"
+                (click)="update()">
+          Guardar cambios
+        </button>
+        <button type="submit"
+                class="btn btn-secondary"
+                (click)="setFormVisibility()">
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </div>
+</ng-container>

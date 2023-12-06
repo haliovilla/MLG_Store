@@ -1,0 +1,81 @@
+
+<div [hidden]="showForm">
+  <div class="d-flex justify-content-between align-items-center mt-3 mb-3 pt-3 pb-3"
+       style="border-bottom:2px solid ~ccc">
+    <h2>
+      Tiendas
+    </h2>
+    <button class="btn btn-outline-secondaryt text-end"
+            (click)="addNew()">
+      Agregar
+    </button>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>Sucursal</td>
+          <td>Domicilio</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let store of stores">
+          <td>{{ store.branch }}</td>
+          <td>{{ store.address }}</td>
+          <td class="text-end">
+            <div class="btn-group text-end">
+              <button class="btn btn-secondary btn-sm"
+                      (click)="edit(store)">
+                Editar
+              </button>
+              <button class="btn btn-secondary btn-sm"
+                      (click)="delete(store)">
+                Eliminar
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<ng-container *ngIf="showForm">
+  <div class="form-group">
+    <h3 class="mt-5 mb-5">
+      {{ !isEdition ? 'Agregar nueva tienda' : 'Editar tienda' }}
+    </h3>
+    <form [formGroup]="storeForm">
+      <div class="mb-3">
+        <label for="branch" class="form-label">Sucursal:</label>
+        <input type="text" class="form-control" id="branch" formControlName="branch" required autofocus />
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">Domicilio:</label>
+        <input type="text" class="form-control" id="address" formControlName="address" required>
+      </div>
+
+      <div class="d-flex justify-content-around align-items-center" mt-3 mb-2>
+        <button type="submit" *ngIf="!isEdition"
+                class="btn btn-primary"
+                [disabled]="!isValidForm()"
+                (click)="save()">
+          Guardar
+        </button>
+        <button type="submit" *ngIf="isEdition"
+                class="btn btn-primary"
+                [disabled]="!isValidForm()"
+                (click)="update()">
+          Guardar cambios
+        </button>
+        <button type="submit"
+                class="btn btn-secondary"
+                (click)="setFormVisibility()">
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </div>
+</ng-container>

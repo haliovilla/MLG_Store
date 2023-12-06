@@ -1,0 +1,11 @@
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\bin\Debug\net6.0\Store.Entities.deps.json
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\bin\Debug\net6.0\Store.Entities.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\bin\Debug\net6.0\Store.Entities.pdb
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\Store.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\Store.Entities.AssemblyInfoInputs.cache
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\Store.Entities.AssemblyInfo.cs
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\Store.Entities.csproj.CoreCompileInputs.cache
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\Store.Entities.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\refint\Store.Entities.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\Store.Entities.pdb
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Entities\obj\Debug\net6.0\ref\Store.Entities.dll

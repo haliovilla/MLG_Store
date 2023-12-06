@@ -1,0 +1,14 @@
+
+li {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.active {
+  font-weight: bold;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #666;
+  color: #fff;
+  box-shadow: inset;
+}

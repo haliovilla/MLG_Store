@@ -1,0 +1,15 @@
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\bin\Debug\net6.0\MLGStore.Data.deps.json
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\bin\Debug\net6.0\MLGStore.Data.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\bin\Debug\net6.0\MLGStore.Data.pdb
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\bin\Debug\net6.0\MLGStore.Entities.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\bin\Debug\net6.0\MLGStore.Entities.pdb
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.csproj.AssemblyReference.cache
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.AssemblyInfoInputs.cache
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.AssemblyInfo.cs
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.csproj.CoreCompileInputs.cache
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.csproj.CopyComplete
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\refint\MLGStore.Data.dll
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\MLGStore.Data.pdb
+C:\projects\personal\2023\mlg\MLG_Store_API\Store.Data\obj\Debug\net6.0\ref\MLGStore.Data.dll

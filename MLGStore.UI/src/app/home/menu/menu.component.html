@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">MLG Store</a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="sr-only">Menú</span>
+      <i class="mdi mdi-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': isNavbarCollapsed }">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLink="articles"
+             routerLinkActive="active">
+            Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <app-shopping-cart-button></app-shopping-cart-button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLink="/dashboard/stores">
+            Dashboard
+          </a>
+        </li>
+        <!--<li class="nav-item">
+    <a style="cursor:pointer;"
+       (click)="logout()">
+      Salir
+    </a>
+  </li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
